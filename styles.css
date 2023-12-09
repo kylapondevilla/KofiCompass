@@ -1,0 +1,20 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(255, 249, 241);
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(44, 14, 0)(255, 163, 163);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
