@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: rgb(255, 249, 241);
+    
 }
 
 li, a, button {
@@ -16,5 +17,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 8%;
 }
+
+.logopic {
+    width : 80px;
+    cursor: pointer;
+}
+.logoname{
+    margin-left: 1px;
+}
+.content-top{
+    margin-right: 9%;
+    margin-left: 9%;
+}
+.content-bottom{
+    margin-top: 22%;
+    margin-left: 60%;
+}
+.content-message{
+    margin-bottom: 2%;
+    margin-left : 10%;
+    width: 30%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+}
+
+hr{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 2%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
