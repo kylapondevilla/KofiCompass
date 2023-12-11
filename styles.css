@@ -5,7 +5,6 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: rgb(255, 249, 241);
-    
 }
 
 html {
@@ -28,6 +27,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+/* start of navbar */
 
 #nav {
     width: 100%;
@@ -76,3 +77,39 @@ nav li a:hover {
     margin-left: 1px;
 }
 
+/* end of navbar */
+
+/* start of hero section */
+
+#hero {
+    margin-top: 15px;
+}
+
+.content-top {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.content-top img {
+    height: 500px;
+}
+
+.img-label-0 {
+    font-size: 40px;
+    position: absolute;
+    bottom: 8%;
+    right: 45px;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: left;
+    text-shadow: 1px 1px 4px rgb(39, 39, 39);
+}
+
+.content-message {
+    position: absolute;
+    right: 16px;
+}
+
+
+/* end of hero section */
