@@ -20,12 +20,34 @@ html {
 .container {
     min-height: 100vh;
     width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+button {
+    text-decoration: none;
+    background-color: #C58950;
+    color: rgb(255, 249, 241);
+    padding: 10px 76px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #86654B;
+    color: rgb(255, 249, 241);
 }
 
 /* start of navbar */
@@ -41,11 +63,17 @@ img {
 }
 
 .logoname {
-    font-family: ;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     margin-right: 25%;
+    transition: .3s ease;
+    transition-property: color;
+}
+
+.logoname:hover {
+    cursor: pointer;
+    color: #C58950;
 }
 
 nav ul {
@@ -63,6 +91,8 @@ nav li a {
     padding: 0px 25px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .3s ease;
+    transition-property: color;
 }
 
 nav li a:hover {
@@ -106,10 +136,33 @@ nav li a:hover {
     text-shadow: 1px 1px 4px rgb(39, 39, 39);
 }
 
-.content-message {
-    position: absolute;
-    right: 16px;
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    flex-wrap: nowrap;
 }
 
+.content-bottom button {
+    margin: 14px;
+}
+
+.content-message {
+    width: 34%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    text-align: justify;
+}
+
+.content-img-0 {
+    /* border: 1px solid black; */
+}
+.content-img-0 img {
+    width: 300px;
+    height: 300px;
+}
 
 /* end of hero section */
+
