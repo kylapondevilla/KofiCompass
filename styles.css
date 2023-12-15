@@ -7,9 +7,20 @@
     background-color: rgb(255, 249, 241);
 }
 
+/* responsive: laptop L - 1440x869*/
+
 html {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+}
+
+body {
+    padding-top: 80px;
 }
 
 .desc {
@@ -19,9 +30,14 @@ html {
 
 .container {
     min-height: 100vh;
-    width: 100%;
+    width: 1440px;
     padding-left: 40px;
     padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 img {
@@ -34,9 +50,9 @@ button {
     text-decoration: none;
     background-color: #C58950;
     color: rgb(255, 249, 241);
-    padding: 10px 76px;
+    padding: 10px 65px;
     border-radius: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     border: none;
@@ -50,16 +66,43 @@ button:hover {
     color: rgb(255, 249, 241);
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title h1 {
+    color: #C58950;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
 /* start of navbar */
 
 #nav {
     width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(255, 249, 241);
+    border-bottom: 1px solid black;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 20px 0px;
+}
+
+.navbar-content {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px 0;
-    border-bottom: 1px solid black;
-    position: relative;
 }
 
 .logoname {
@@ -101,6 +144,7 @@ nav li a:hover {
 
 .logopic {
     width : 80px;
+    height: 70px;
     cursor: pointer;
 }
 .logoname{
@@ -111,8 +155,9 @@ nav li a:hover {
 
 /* start of hero section */
 
-#hero {
-    margin-top: 15px;
+#hero .hero {
+    width: 1440px;
+    margin-bottom: 100px;
 }
 
 .content-top {
@@ -122,6 +167,7 @@ nav li a:hover {
 }
 
 .content-top img {
+    width: 1355px;
     height: 500px;
 }
 
@@ -139,30 +185,167 @@ nav li a:hover {
 .content-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     flex-direction: row;
-    /* border: 1px solid black; */
+    align-content: center;
     flex-wrap: nowrap;
 }
 
 .content-bottom button {
-    margin: 14px;
+    margin: 11px;
+}
+
+.content-buttons {
+    display: flex;
 }
 
 .content-message {
-    width: 34%;
-    /* border: 1px solid black; */
+    width: 38%;
     overflow: hidden;
     text-align: justify;
 }
 
-.content-img-0 {
-    /* border: 1px solid black; */
-}
-.content-img-0 img {
-    width: 300px;
-    height: 300px;
+.content-bottom img {
+    width: 262px;
+    height: 262px;
 }
 
 /* end of hero section */
+
+/* start of about section */
+
+#about {
+    margin-top: 100px;
+}
+
+#about .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#about .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-item-top {
+    width: 47%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-item-top img {
+    width: 200px;
+    height: 300px;
+    border-radius: 95px;
+}
+
+.about-item-top .profile-desc {
+    width: 360px;
+    margin-left: 30px;
+    padding: 25px 0;
+    text-align: justify;
+}
+
+#about .about-item-bottom {
+    width: 47%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-item-bottom img {
+    width: 200px;
+    height: 300px;
+    border-radius: 95px;
+}
+
+.about-item-bottom .profile-desc {
+    width: 360px;
+    margin-left: 30px;
+    padding: 25px 0;
+    text-align: justify;
+}
+
+
+/* start of services section */
+/* end of services section */
+
+/* start of contact section */
+
+#contact {
+    width: 1440px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+}
+
+#contact .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-info {
+    width: 50%;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info .inst-text {
+    font-weight: 700;
+    font-style: italic;
+    padding-bottom: 1px;
+}
+
+.email-text {
+    font-weight: 700;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contact-input {
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: #C58950;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+label {
+    height: 100%;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    font-size: 16px;
+}
+
+/* end of contact section */
+
+
 
