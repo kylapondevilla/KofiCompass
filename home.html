@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="favicon" href="assets/logo (1).png">
         <title>Kofi Compass - Cafe Finder</title>
         <link rel="icon" href="/assets/logo (1).png">
     </head>
@@ -12,22 +13,24 @@
             <header>
                 <!-- start of navbar -->
                 <section id="nav">
-                    <div class="logo">
-                        <img src="/assets/logo (1).png" class="logopic" alt="Kofi Compass Logo"> 
+                    <div class="navbar-content">
+                        <div class="logo">
+                            <img src="/assets/logo (1).png" class="logopic" alt="Kofi Compass Logo"> 
+                        </div>
+                        <div class="logoname">
+                            <p>Kofi Compass</p>
+                        </div>
+                        <nav>
+                            <ul class="nav-links">
+                                <li class="nav-item"><a href="#hero container">Home</a></li>
+                                <li class="nav-item"><a href="#about">About</a></li>
+                                <li class="nav-item"><a href="#contact">Contact</a></li>
+                                <li class="nav-item"><a href="/cafe_list.html">Cafes</a></li>
+                            </ul>
+                        </nav> 
                     </div>
-                    <div class="logoname">
-                        <p>Kofi Compass</p>
-                    </div>
-                    <nav>
-                        <ul class="nav-links">
-                            <li class="nav-item"><a href="a">Home</a></li>
-                            <li class="nav-item"><a href="a">About</a></li>
-                            <li class="nav-item"><a href="a">Services</a></li>
-                            <li class="nav-item"><a href="a">Contact</a></li>
-                        </ul>
-                    </nav> 
                 </section>
-                <!-- end of navbar -->
+            <!-- end of navbar -->
             </header>
             <!-- start of hero section -->
             <section id="hero container">
@@ -44,13 +47,15 @@
                                 coffee in the morning, spend their productive afternoons, 
                                 and simply relax. We are a community with a simple goal: 
                                 find good coffee spots! </p>
-                            <a href="#" class="log"><button>Log in</button> </a>
-                            <a href="#" class="sign"><button>Sign up</button> </a>
+                                <div class="content-buttons">
+                                    <a href="#" class="log"><button>Log in</button> </a>
+                                    <a href="#" class="sign"><button>Sign up</button> </a>
+                                </div>
                         </div>
                         <div class="content-img-0">
                             <img src="/assets/cat coffee placeholder.jpeg">
                             <img src="/assets/cat coffee placeholder.jpeg">
-                            <img src="h/assets/cat coffee placeholder.jpeg">
+                            <img src="/assets/cat coffee placeholder.jpeg">
                         </div>
                     </div>
                 </div>
@@ -59,110 +64,132 @@
 
             <!-- start of about section-->
             <section id="about">
-                <div class="about-authors-0">
-                    <div class="profile">
-                        <img src="/assets/cat coffee placeholder.jpeg">
-                    </div>
-                    <h2> Kyla Pondevilla</h2>
-                    <p> The Leader, the front-end develeper
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
-                    sit amet. Vestibulum euismod diam mauris, faucibus cursus 
-                    velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
-                    id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
-                    sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
-                 </div>
-            <div class="about-authors-1">
-                    <div class="profile">
-                        <img src="h/assets/cat coffee placeholder.jpeg">
-                    </div>
-                    <h2> Eunice Grace Revillas </h2>
-                    <p> The back-end developer
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
-                        sit amet. Vestibulum euismod diam mauris, faucibus cursus 
-                        velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
-                        id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
-                        sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                <div class="section-title">
+                    <h1>Authors</h1>
                 </div>
-            <div class="about-authors-2">
-                    <div class="profile">
-                        <img src="/assets/cat coffee placeholder.jpeg">
+                <div class="about container">
+                    <div class="about-item-top">
+                        <div class="profile">
+                            <img src="/assets/cat coffee placeholder.jpeg">
+                        </div>
+                        <div class="profile-desc">
+                            <h2> Kyla Pondevilla</h2>
+                            <p> The Leader, the front-end develeper
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
+                            sit amet. Vestibulum euismod diam mauris, faucibus cursus 
+                            velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
+                            id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
+                            sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                        </div>
+                     </div>
+                    <div class="about-item-top">
+                        <div class="profile">
+                            <img src="/assets/cat coffee placeholder.jpeg">
+                        </div>
+                        <div class="profile-desc">
+                            <h2> Eunice Grace Revillas </h2>
+                            <p> The back-end developer
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
+                                sit amet. Vestibulum euismod diam mauris, faucibus cursus 
+                                velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
+                                id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
+                                sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                        </div>
                     </div>
-                    <h2> Mari Isabelle Palacios</h2>
-                    <p> Lead Graphic designer
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
-                        sit amet. Vestibulum euismod diam mauris, faucibus cursus 
-                        velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
-                        id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
-                        sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
-                </div>
-            <div class="about-authors-3">
-                    <div class="profile">
-                        <img src="/assets/cat coffee placeholder.jpeg">
+                    <div class="about-item-bottom">
+                        <div class="profile">
+                            <img src="/assets/cat coffee placeholder.jpeg">
+                        </div>
+                        <div class="profile-desc">
+                            <h2> Mari Isabelle Palacios</h2>
+                            <p> Lead Graphic designer
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
+                                sit amet. Vestibulum euismod diam mauris, faucibus cursus 
+                                velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
+                                id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
+                                sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                        </div>
                     </div>
-                    <h2> Hannah Ysabella Del Rosario</h2>
-                    <p> The data and content collector and the Graphic designer
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
-                        sit amet. Vestibulum euismod diam mauris, faucibus cursus 
-                        velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
-                        id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
-                        sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                    <div class="about-item-bottom">
+                        <div class="profile">
+                            <img src="/assets/cat coffee placeholder.jpeg">
+                        </div>
+                        <div class="profile-desc">
+                            <h2> Hannah Ysabella Del Rosario</h2>
+                            <p> The data and content collector and the Graphic designer
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Phasellus tincidunt dapibus ex, id pulvinar lectus imperdiet 
+                                sit amet. Vestibulum euismod diam mauris, faucibus cursus 
+                                velit consectetur eu. Sed id placerat dui. Maecenas faucibus 
+                                id est sed dictum. Phasellus semper, nibh id laoreet aliquam, 
+                                sem sem consequat nisi, eu malesuada ex orci vitae lectus.</p>
+                        </div>
+                    </div>
                 </div>
         </section>
         <!-- end of about section-->
 
-        <!-- Start of services? section-->
+        <!-- TO DO services? section-->
+
+        <section>
+
+        </section>
 
         <!-- end of services? section-->
 
         <!-- Start of contacts section-->
-        <section class="contact">
-            <div class="contact-info">
-                <h2 class="contact-header">Contact</h2>
-                <div class="contact-info-0">
-                    <p class="inst-text">Please fill out the form below to send us an email.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <section id="contact">
+            <div class="contact container">
+                <div class="contact-info">
+                    <div class="section-title">
+                        <h1 class="section-title">Contact</h>
+                    </div>
+                    <div class="contact-info-0">
+                        <p class="inst-text">Please fill out the form below to send us an email.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="contact-info-1">
+                            <p class="email-text">Email:</p>
+                            <address>
+                                 <a href="hello@reallygreatsite.com">
+                                hello@reallygreatsite.com</a> 
+                            </address>
+                    </div>
                 </div>
-                <div class="contact-info-1">
-                        <p class="email-text">Email:</p>
-                        <address>
-                             <a href="hello@reallygreatsite.com">
-                            hello@reallygreatsite.com</a> 
-                        </address>
+                <div class="contact-form">
+                    <form action="/action_page.php">
+                        <div class="contact-input">
+                            <label for="name" required>Name:</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="contact-input">
+                            <label for="mail" required>Email Address:</label>
+                            <input type="email" id="mail">
+                        </div>
+                        <div class="contact-input">
+                            <label for="suject" required>Subject:</label>
+                            <input type="text" id="subject">
+                        </div>
+                        <div class="contact-input">
+                            <label for="message" required>Message:</label>
+                            <textarea id="message" rows="8"></textarea>
+                        </div>
+                        <div class="contact-submit">
+                            <button type="submit">Submit</button>
+                        </div>
+                      </form>
                 </div>
-            </div>
-            <div class="contact-form">
-                <form action="/action_page.php">
-
-                    <div class="contact-input">
-                        <label for="uname">Name:</label>
-                        <input type="text" id="uname">
-                    </div>
-                    <div class="contact-input">
-                        <label for="mail">Email Address:</label>
-                        <input type="email" id="mail">
-                    </div>
-                    <div class="contact-input">
-                        <label for="suject">Subject:</label>
-                        <input type="text" id="subject">
-                    </div>
-                    <div class="contact-input-0">
-                        <label for="message">Message:</label>
-                        <input type="text" id="message">
-                    </div>
-                    <div class="contact-submit">
-                        <input type="submit" value="Submit">
-                    </div>
-                  </form>
             </div>
         </section>
         <!-- end of contacts section-->
+
+        <!-- TO DO: footer with logoname, tagline, socmed icons, copyright emerut -->
         </div>
     </body>
 </html>
