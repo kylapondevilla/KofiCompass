@@ -168,8 +168,12 @@ nav li:nth-child(4):hover {
     height: 70px;
     cursor: pointer;
 }
-.logoname{
+.logoname {
     margin-left: 1px;
+}
+
+.logoname p {
+    font-size: 1.5rem;
 }
 
 /* end of navbar */
@@ -373,7 +377,7 @@ label {
 .cafes {
     max-width: 1440px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -383,7 +387,7 @@ label {
 
 .cafe-items {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -428,6 +432,7 @@ label {
 
 .cafe-info h2, h3, p, span, a {
     background: transparent;
+    margin-bottom: 30px;
 }
 
 .cafe-img {
@@ -453,5 +458,24 @@ label {
 .cafe-info h3 span {
     font-weight: 700;
 }
+
+.cafe-info a {
+    text-align: center;
+    text-decoration: none;
+    color: #86654B;
+    font-weight: 400;
+    border-radius: 40px;
+    border: 1px solid #86654B;
+    padding: 11px 15px;
+    margin: 10px auto;
+}
+
+.cafe-info a:hover {
+    color: #D1C8C1;
+    background-color: #86654B;
+    transition: .3s ease;
+    transition-property: color;
+}
+
 
 /* end of cafe_list page */
