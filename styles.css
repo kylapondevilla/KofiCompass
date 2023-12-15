@@ -84,6 +84,11 @@ h2 {
     font-size: 1.2rem;
 }
 
+p span {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* start of navbar */
 
 #nav {
@@ -140,6 +145,22 @@ nav li a {
 
 nav li a:hover {
     color: #C58950;
+}
+
+nav li:nth-child(4) {
+    color: #896950;
+    background-color: transparent;
+    border: 2px solid #896950;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+nav li:nth-child(4):hover {
+    color: #C58950;
+    background-color: transparent;
+    border: 2px solid #C58950;
+    border-radius: 20px;
+    padding: 3px;
 }
 
 .logopic {
@@ -347,5 +368,90 @@ label {
 
 /* end of contact section */
 
+/* start of cafe_list page */
 
+.cafes {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
 
+.cafe-items {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+.cafe {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 80px auto; */
+    overflow: hidden;
+    border-radius: 25px;
+    background: #D1C8C1;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0px 0px 6px #b4b4b4;
+    transition: 0.3s ease transform;
+    margin: 40px auto;
+}
+
+.cafe:hover {
+    box-shadow: 0px 0px 8px #b4b4b4;
+    transform: scale(1.1);
+}
+
+.cafe-info {
+    max-width: 600px;
+    overflow: hidden;
+    background: #D1C8C1;
+    padding: 6px 20px;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cafe-info h2, h3, p, span, a {
+    background: transparent;
+}
+
+.cafe-img {
+    background: transparent;
+}
+
+.cafe-img img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cafe-info h2 {
+    font-size: 1.2rem;
+}
+
+.cafe-info h3, p {
+    font-size: .8rem;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+
+.cafe-info h3 span {
+    font-weight: 700;
+}
+
+/* end of cafe_list page */

@@ -8,9 +8,10 @@
     <title>Kofi Compass - Cafe List</title>
 </head>
 <body>
-    <div class="container">
+    <div class="cafes container">
         <!--start of But first coffee section-->
-        <section id="BFC">
+        <div class="cafe-items">
+            <section id="BFC">
                 <div class="cafe">
                     <div class="cafe-img">
                         <img src="/assets/cat coffee placeholder.jpeg">
@@ -18,22 +19,28 @@
                     <div class="cafe-info" >
                         <h2 class="cafe-name"> But first, Coffee </h2>
                         <h3 class="cafe-add"> 
-                            <span>23 Jose Abad Santos, Dasmariñas, Cavite<br>
-                            Opening hours |</span> 7:00 am - 10:00pm<br>
-                            ☆ ☆ ☆ ☆  <span>4.5</span>
+                            <span>Jose Abad Santos, Dasmariñas, Cavite<br></span>
+                            <span>Opening hours |</span> 7:00 am - 10:00pm<br>
+                            <p>☆ ☆ ☆ ☆ <span>4.5</span></p>  
                         </h3>
                             <br>
-                        <p> <span>7</span>—kilometers from DLSU - Dasmariñas
+                        <p><span>7</span>— kilometers from DLSU - Dasmariñas
                             <br><br>
-                            <span>Directions:</span>
                             <a target="blank" href="https://www.google.com/maps/dir/14.5040836,120.9062283/23+Jose+Abad+Santos,+Dasmari%C3%B1as,+Cavite/@14.3499716,120.885629,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3397d552a14a374d:0xf71021a450096cdc!2m2!1d120.9680308!2d14.3499858?entry=ttu">
-                                Click here
+                                Directions
                             </a>
                             </p>
                     </div>
                 </div>
         </section>
         <!--end of But first coffee section-->
+
+        <!-- TODO (see section #BFC for reference):
+            - remove "<span>Directions:</span>"
+            - replace anchor tag "Click Here" with <a> Directions </a> 
+            - replace ☆ ☆ ☆ ☆  <span>4.7</span> with
+            <p>☆ ☆ ☆ ☆ <span>4.5</span></p> 
+            - put address and opening hours in different spans -->
 
         <!--start of Chai Cafe section-->
         <section id="CC">
@@ -140,35 +147,35 @@
                     </section>
             <!--end of Hangout Cafe section-->
                         
-                            <!--start of iCafe section-->
-                            <section id="HC">
-                                <div class="cafe">
-                                    <div class="cafe-img">
-                                        <img src="/assets/cat coffee placeholder.jpeg">
-                                    </div>
-                                    <div class="cafe-info" >
-                                        <h2 class="cafe-name">iCafe</h2>
-                                        <h3 class="cafe-add"> 
-                                            <span>Zone 4, 28 Emilio Aguinaldo Hwy, Dasmariñas, 4114 Cavite <br>
-                                                Opening hours | </span> 10:00am - 10:00pm (Monday - Thursday)  
-                                                10:00am - 6:00pm (Friday) 12:00pm - 10:00pm (Saturday)  
-                                                8:30 am - 10:00pm (Sunday) <br>
-                                            ☆ ☆ ☆ ☆  <span>4.8</span>
-                                        </h3>
-                                            <br>
-                                        <p> <span>3</span>—kilometers from DLSU - Dasmariñas
-                                            <br><br>
-                                            <span>Directions:</span>
-                                            <a target="blank" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI2NjJqMGo0qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ph&sa=X&geocode=KS2Lrnf_1JczMV2Ju75EIhm3&daddr=Zone+4,+28+Emilio+Aguinaldo+Hwy,+Dasmari%C3%B1as,+4114+Cavite">
-                                                Click here
-                                            </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                            </section>
-                    <!--end of iCafe section-->
+            <!--start of iCafe section-->
+                <section id="HC">
+                    <div class="cafe">
+                        <div class="cafe-img">
+                            <img src="/assets/cat coffee placeholder.jpeg">
+                        </div>
+                        <div class="cafe-info" >
+                            <h2 class="cafe-name">iCafe</h2>
+                            <h3 class="cafe-add"> 
+                                <span>Zone 4, 28 Emilio Aguinaldo Hwy, Dasmariñas, 4114 Cavite <br>
+                                    Opening hours | </span> 10:00am - 10:00pm (Monday - Thursday)  
+                                    10:00am - 6:00pm (Friday) 12:00pm - 10:00pm (Saturday)  
+                                    8:30 am - 10:00pm (Sunday) <br>
+                                ☆ ☆ ☆ ☆  <span>4.8</span>
+                            </h3>
+                                <br>
+                            <p> <span>3</span>—kilometers from DLSU - Dasmariñas
+                                <br><br>
+                                <span>Directions:</span>
+                                <a target="blank" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI2NjJqMGo0qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ph&sa=X&geocode=KS2Lrnf_1JczMV2Ju75EIhm3&daddr=Zone+4,+28+Emilio+Aguinaldo+Hwy,+Dasmari%C3%B1as,+4114+Cavite">
+                                    Click here
+                                </a>
+                                </p>
+                            </div>
+                    </div>
+                </section>
+            <!--end of iCafe section-->
 
-                                <!--start of Liwanag Cafe section-->
+            <!--start of Liwanag Cafe section-->
                 <section id="HC">
                     <div class="cafe">
                         <div class="cafe-img">
@@ -193,9 +200,9 @@
                             </div>
                         </div>
                 </section>
-        <!--end of Liwanag Cafe section-->
+            <!--end of Liwanag Cafe section-->
 
-                <!--start of Tinatangi Cafe section-->
+            <!--start of Tinatangi Cafe section-->
                 <section id="HC">
                     <div class="cafe">
                         <div class="cafe-img">
@@ -220,7 +227,9 @@
                             </div>
                         </div>
                 </section>
-        <!--end of Tinatangi Cafe section-->
+            <!--end of Tinatangi Cafe section-->
+        </div>
+        
         <button onclick="history.back()">Go Back</button>
     </div>
 </body>
